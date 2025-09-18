@@ -22,7 +22,7 @@ with open("songs.pkl", "rb") as f:
 # ----------------------------
 # Recommendation function
 # ----------------------------
-def recommend_songs(song_name, top_n=5):
+def recommend_songs(song_name, top_n=30):
     # Lowercase list of songs
     all_songs = df['song'].str.lower().tolist()
 
